@@ -25,4 +25,19 @@ Supports:
 ### 2. Run locally
 ```bash
 > cd kv-store
+> npm i
 > npm run local
+```
+### Call API
+
+1. Store a key-value pair
+    - **POST** http://localhost:3000/object
+    - headers: Content-Type: application/json
+    - body(raw): { "customKey": "val2" }
+
+2. Get latest value of a key
+    - **GET** http://localhost:3000/object/(customKey)
+
+3. Get values of a timestamp
+    - **GET** http://localhost:3000/object/(customKey)?timestamp=1755434123
+    - params: timestamp: 1755434123
