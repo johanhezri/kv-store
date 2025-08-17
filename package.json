@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "type": "module",
+  "name": "kv-store",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "local": "node --env-file .env.local src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
